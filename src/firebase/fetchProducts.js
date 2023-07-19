@@ -1,6 +1,6 @@
 // Import Firestore database
 import db from './importFirebase';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { BsArrowRight } from 'react-icons/bs';
 import { useDispatch } from 'react-redux';
 import { useNavigate} from 'react-router-dom';
@@ -32,7 +32,10 @@ const Read = () => {
             });
         })
     }
-    Fetchdata();
+    
+    useEffect(()=> {
+        Fetchdata()
+    },[])
  
     // Display the result on the page
     return (
