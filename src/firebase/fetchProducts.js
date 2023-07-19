@@ -14,9 +14,10 @@ const Read = () => {
  
     // Start the fetch operation as soon as
     // the page loads
-    window.addEventListener('load', () => {
-        Fetchdata();
-    });
+    
+    // window.addEventListener('load', () => {
+        
+    // });
  
     // Fetch the required data using the get() method
     const Fetchdata = () => {
@@ -31,6 +32,7 @@ const Read = () => {
             });
         })
     }
+    Fetchdata();
  
     // Display the result on the page
     return (
@@ -71,7 +73,7 @@ const Frame = ({ detail, image, name, type, variations, price, keyId, key}) => {
 
 
     const handleDetails = () => {
-        navigate(`/product/${rootId}`,{
+        navigate(`/${rootId}`,{
             state:{
                 item: { detail, image, name, type, variations, price, _id1, keyId, key}
             }

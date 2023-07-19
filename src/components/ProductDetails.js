@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { addToCart } from '../redux/eShopSlice';
 import { ToastContainer, toast } from 'react-toastify'
 import { AiOutlineCloseCircle } from 'react-icons/ai';
@@ -18,7 +18,8 @@ const ProductDetails = () => {
         
     <div>
         <div className='max-w-screen-xl mx-auto my-10 flex gap-10'>
-        <button onClick="" className='ml-99'><AiOutlineCloseCircle /></button>
+        <Link to = "/">
+        <button className='ml-99'><AiOutlineCloseCircle /></button></Link>
             <div>
                 <img className='w-full h-[550px] object-cover' src={details.image} alt="productImage" />
             </div>

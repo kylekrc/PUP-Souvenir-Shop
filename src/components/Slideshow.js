@@ -8,6 +8,7 @@ const Banner = () => {
     'https://htmlcolorcodes.com/assets/images/colors/baby-blue-color-solid-background-1920x1080.png',
     'https://htmlcolorcodes.com/assets/images/colors/yellow-orange-color-solid-background-1920x1080.png',
     'https://htmlcolorcodes.com/assets/images/colors/red-color-solid-background-1920x1080.png',
+    
   ];
 
   const prevSlide = () => {
